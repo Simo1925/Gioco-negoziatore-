@@ -68,7 +68,7 @@ p.append(E('h3','Intenzione e comportamento'),E('p','All’inizio hai dichiarato
 const read=E('section',undefined,'read');read.append(E('div','IL TUO ARTICOLO CONSIGLIATO','eyebrow'));const link=E('a',prof.article+' ↗');link.href=prof.link;link.target='_blank';link.rel='noopener';read.append(link,E('p','Un approfondimento dal blog Essere Commerciale Oggi, scelto in base allo stile emerso.'));p.append(read);app.append(p);
 const discuss=E('section',undefined,'sharebox');discuss.append(E('h3','Confrontiamoci sulle scelte'),E('p','Quale profilo hai ottenuto? Ti riconosci nel risultato? Puoi raccontarlo nei commenti della pagina del gioco sul blog.'));
 const blogComment=E('a','Commenta sul blog ↗','action');blogComment.href='https://simonebblogblog.wordpress.com/che-negoziatore-sei/#respond';blogComment.target='_blank';blogComment.rel='noopener';discuss.append(blogComment);
-const linkedin=E('div',undefined,'read');linkedin.append(E('strong','Discussione su LinkedIn'),E('p','Quando sarà pubblicato il post dedicato al gioco, qui troverai il collegamento diretto ai suoi commenti.'));discuss.append(linkedin);
+const linkedin=E('div',undefined,'read');linkedin.append(E('strong','Discussione su LinkedIn'),E('p','Hai scoperto il tuo profilo? Racconta il risultato e confrontati con gli altri nei commenti del post LinkedIn.'));const linkedinLink=E('a','Commenta su LinkedIn ↗','action');linkedinLink.href='https://lnkd.in/p/euQQ85mf';linkedinLink.target='_blank';linkedinLink.rel='noopener noreferrer';linkedin.append(linkedinLink);discuss.append(linkedin);
 app.append(discuss,btn('Ricomincia',reset,'secondary'));
 }
 reset();
